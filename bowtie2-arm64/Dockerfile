@@ -10,7 +10,14 @@ RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
     libtbb-dev \
-    perl
+    perl \
+    python3.10
+
+# Set alias for python3.10
+# RUN ln -s /usr/bin/python3.10 /usr/bin/python
+# RUN alias python=/usr/bin/python3.10
+# RUN alias python3=/usr/bin/python3.10
+RUN cp /usr/bin/python3.10 /usr/bin/python3
 
 # Download bowtie2 and unzip and set PATH variable
 # This code for Apple Silicon installs the ARM64 version of bowtie2
