@@ -10,5 +10,12 @@ RUN apt-get update && apt-get install -y \
     libtbb-dev \
     perl
 
+RUN wget https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.5.2/bowtie2-2.5.2-linux-aarch64.zip
+RUN unzip bowtie2-2.5.2-linux-aarch64.zip
+RUN rm -rf bowtie2-2.5.2-linux-aarch64.zip
+ENV PATH="/bowtie2-2.5.2-linux-aarch64:$PATH"
+
+RUN bowtie2 --help
+
 # Set the default command to be executed when the container is run
 CMD ["/bin/bash"]
