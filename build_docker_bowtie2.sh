@@ -7,6 +7,7 @@ arch=$(uname -m)
 if [ "$arch" = "x86_64" ]; then
   echo "The architecture is amd64"
   # Add intel docker build command here
+  # docker build -t bowtie2 ./bowtie2-amd64
 
 # Build ARM64 docker image if Apple Silicon or other ARM archtitecture is detected
 elif [ "$arch" = "aarch64" ] || [ "$arch" = "arm64" ]; then
