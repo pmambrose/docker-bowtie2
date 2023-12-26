@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     python3.10
 
 # Set alias for python3.10
-# RUN alias python=/usr/bin/python3.10
+# RUN alias python=/usr/bin/python3.10 # didn't work so just copying over
 RUN cp /usr/bin/python3.10 /usr/bin/python3
 
 # Download bowtie2 and unzip and set PATH variable
