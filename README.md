@@ -8,7 +8,7 @@ Bowtie2 is a popular tool for aligning sequencing reads to long reference sequen
 
 ## Features
 
--   **Architecture Detection**: Automatically detects the host's CPU architecture (ARM64 or x86_64) and builds a native compatible Docker image.
+-   **Architecture Detection**: Automatically detects the host's CPU architecture (ARM64 or x86_64) and builds a native compatible Docker image. For example, a docker image built on Apple M1/2/3+ Silicon computers will contain bowtie2 and all dependencies natively compiled for Apple's `arm64` architecture, which precludes the need for a `Rosetta2` emulation layer, boosting performance and also minimizing the risk of emulator compatibility errors and ensuring uninterrupted compatibility if Apple drops `Rosetta2` support in future OSX updates.
 -   **Optimized for Bowtie2 v2.5.2, Released Oct 14, 2023**: Specifically tailored for version 2.5.2 of Bowtie2 and includes all version-specific dependencies (eg. `bowtie2 v2.5.2` requires `python3 version >=3.10 & <3.11.0a0`)
 -   **Easy to Use**: Simplifies the process of setting up Bowtie2, especially on systems with compatibility issues.
 
