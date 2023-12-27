@@ -67,7 +67,7 @@ Here are some real-world examples of how I use this docker container within my w
 
 1.  **Generate a Bowtie2 Index For Alignments**:
 
--   To generate a small index using a `poliovirus.fasta` file in the terminals working directory into a relative path directory `./alignments/index/poliovirus` directory, while piping bowtie2's terminal output during index building to `indexing_terminal.txt`:
+-   To generate a small index using a `poliovirus.fasta` file in the terminal's working directory into a relative path directory `./alignments/index/`, while piping bowtie2's terminal output during index building to `indexing_terminal.txt`:
 
     ``` bash
     docker run -v ./:/home bowtie2-docker /bin/bash -c "bowtie2-build /home/poliovirus.fasta /home/alignments/index/poliovirus > /home/alignments/index/indexing_terminal.txt"
