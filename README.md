@@ -102,5 +102,3 @@ For help or feedback, please contact me at [154608358+pmambrose\@users.noreply.g
 ## **Acknowledgements**
 
 -   Thanks to [Benjamin Langmead](https://engineering.jhu.edu/faculty/benjamin-langmead/) and the Bowtie2 team for developing and maintaining the software.
-
--   This Dockerfile is inspired by community contributions and best practices.
