@@ -1,4 +1,4 @@
-# Bowtie2 v2.5.2 Dockerfile for Native Apple M1+ Silicon (ARM64) and Intel/AMD (x86_64) Containers
+# Bowtie2 v2.5.2 Dockerfile Native for Apple M1+ Silicon (ARM64) and Intel/AMD (x86_64) Containers
 
 This repository contains a Dockerfile for [Bowtie2](https://bowtie-bio.sourceforge.io/bowtie2/index.shtml) version 2.5.2 (released on October 14, 2023) specifically designed to detect the computer architecture and create a native Docker container image for either Apple M1/2/3+ Silicon (ARM64) or Intel/AMD (x86_64) chips.
 
